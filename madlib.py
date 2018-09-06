@@ -1,0 +1,5 @@
+Noun=str(input("Enter a noun:  "))
+Verb=str(input("Enter a verb:  "))
+Adjective=str(input("Enter an adjective:  "))
+Place=str(input("Enter a place:  "))
+print ("Take your " + Adjective + " " + Noun + " and " + Adjective + " it at the " + Place + "!")
