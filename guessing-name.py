@@ -1,3 +1,4 @@
+import sys
 def main():
     print('''
       ========================
@@ -5,15 +6,18 @@ def main():
       ========================
       ''')
 
-    answer="Elephant"
+    answer="elephant"
     guess=""
     res=True
 
     while res==True:
         print("I'm thinking of an animal")
         guess=str(input("Guess the animal:  "))
-        if guess!="Elephant":
-            print ("Try Again \n")
+        if guess.lower() == "quit":
+            print ("Goodbye")
+            sys.exit()
+        elif guess.lower() != "elephant":
+            print ("Try Again \n")  
         else:
             res=False
     print ("Congrats, you have finally got it \n"
