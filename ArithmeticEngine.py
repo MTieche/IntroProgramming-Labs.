@@ -29,7 +29,11 @@ def doLoop():
             result = num1 * num2
             break
         elif cmd.lower() == "div":
-            result = num1 // num2
+            try:
+                result = num1 / num2
+            except:
+                print("Unable to divide by zero")
+                result=0
             break
         elif cmd.lower() == "power":
             result = num1 ** num2
